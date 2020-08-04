@@ -18,7 +18,10 @@ Simple todo rest api made with node and dynamodb
 git clone git@github.com:GuilhermeGabriel/node-api-aws-dynamodb-todo.git
 cd node-api-aws-dynamodb-todo
 
+//Install dependencies
 yarn
+
+//Start code
 yarn start
 ```
 
@@ -38,32 +41,29 @@ You can create, retrieve, update, or delete todos with the following commands:
 ### Create a Todo
 
 ```bash
-curl -X POST <IP:3333>/todos --data '{ "todo": "Learn Serverless" }'
+curl -X POST <IP:3333>/todos --data '{ "todo": "make item 001" }'
 ```
 
 ### List all Todos
 
 ```bash
-curl https://XXXXXXX.execute-api.us-east-1.amazonaws.com/dev/todos
+curl POST <IP:3333>/todos
 ```
 
 ### Get one Todo
 
 ```bash
-# Replace the <id> part with a real id from your todos table
-curl https://XXXXXXX.execute-api.us-east-1.amazonaws.com/dev/todos/<id>
+curl POST <IP:3333>/todos/<id>
 ```
 
 ### Update a Todo
 
-```bash
-# Replace the <id> part with a real id from your todos table
-curl -X PUT https://XXXXXXX.execute-api.us-east-1.amazonaws.com/dev/todos/<id> --data '{ "text": "Learn Serverless", "checked": true }'
+```
+curl -X PUT <IP:3333>/todos/<id>
 ```
 
 ### Delete a Todo
 
 ```bash
-# Replace the <id> part with a real id from your todos table
-curl -X DELETE https://XXXXXXX.execute-api.us-east-1.amazonaws.com/dev/todos/<id>
+curl -X DELETE <IP:3333>/todos/<id>
 ``
