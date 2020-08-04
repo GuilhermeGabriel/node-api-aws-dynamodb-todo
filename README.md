@@ -13,6 +13,8 @@ Simple todo rest api made with node and dynamodb
 ```bash
 npm install
 ```
+
+```
 endpoints:
   POST - <IP:3333>/todos
   GET - <IP:3333>/todos
