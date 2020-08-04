@@ -15,7 +15,7 @@ Simple todo rest api made with node and dynamodb
 // Create an machine in EC2 on aws
 // Install Node
 // Clone this repo
-git@github.com:GuilhermeGabriel/node-api-aws-dynamodb-todo.git
+git clone git@github.com:GuilhermeGabriel/node-api-aws-dynamodb-todo.git
 cd node-api-aws-dynamodb-todo
 
 yarn
