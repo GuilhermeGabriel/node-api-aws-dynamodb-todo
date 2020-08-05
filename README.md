@@ -47,13 +47,13 @@ curl -X POST <IP:3333>/todos --data '{ "todo": "make item 001" }'
 ### List all Todos
 
 ```bash
-curl POST <IP:3333>/todos
+curl <IP:3333>/todos
 ```
 
 ### Get one Todo
 
 ```bash
-curl POST <IP:3333>/todos/<id>
+curl <IP:3333>/todos/<id>
 ```
 
 ### Update a Todo
